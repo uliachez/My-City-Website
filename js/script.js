@@ -1,13 +1,20 @@
-// Пример динамики: кнопка меняет фон сайта (по желанию можно добавить на всех страницах)
-document.addEventListener("DOMContentLoaded", () => {
-  const main = document.querySelector("main");
+const accordionHeaders = document.querySelectorAll(".accordion-header");
 
-  if (main) {
-    main.addEventListener("click", () => {
-      document.body.style.backgroundColor =
-        document.body.style.backgroundColor === "lightyellow"
-          ? "white"
-          : "lightyellow";
-    });
-  }
+accordionHeaders.forEach(header => {
+  header.addEventListener("click", () => {
+    const item = header.parentElement;
+    const content = header.nextElementSibling;
+
+    // если уже открыт — закрываем
+    if (item.classList.contains("active")) {
+      content.style.maxHeight = null;
+      item.classList.remove("active");
+    } else {
+
+      // открываем этот
+      content.style.maxHeight = content.scrollHeight + "px";
+      item.classList.add("active");
+    }
+  });
 });
+

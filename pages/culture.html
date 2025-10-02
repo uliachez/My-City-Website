@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Культура и искусство</title>
+  <title>Культура и искусство Нижнего Новгорода</title>
+  
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/culture.css">
   <script src="../js/script.js" defer></script>
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="culture-nav">
       <button onclick="location.href='culture.html'">Культура и искусство</button>
       <button onclick="location.href='food.html'">Где поесть</button>
       <button onclick="location.href='parks.html'">Парки и прогулки</button>
@@ -18,8 +20,110 @@
   </header>
 
   <main>
-    <h1>Культура и искусство</h1>
-    <p>Здесь можно рассказать о театрах, музеях и культурных событиях города.</p>
+    <h1 class="culture-title">Культура и искусство</h1>
+
+    <!-- ========== МУЗЕИ ========== -->
+    <h2 class="museums-title">Музеи</h2>
+    <div class="museums-gallery-wrapper">
+      <div class="museums-gallery" id="museumsGallery">
+        <div class="museum-item">
+          <img src="../img/museum1.webp" alt="Музей 1">
+          <h3>Музей 1</h3>
+          <p>Адрес музея 1</p>
+        </div>
+        <div class="museum-item">
+          <img src="../img/museum2.webp" alt="Музей 2">
+          <h3>Музей 2</h3>
+          <p>Адрес музея 2</p>
+        </div>
+        <div class="museum-item">
+          <img src="../img/museum3.webp" alt="Музей 3">
+          <h3>Музей 3</h3>
+          <p>Адрес музея 3</p>
+        </div>
+        <div class="museum-item">
+          <img src="../img/museum4.webp" alt="Музей 4">
+          <h3>Музей 4</h3>
+          <p>Адрес музея 4</p>
+        </div>
+        <div class="museum-item">
+          <img src="../img/museum5.webp" alt="Музей 5">
+          <h3>Музей 5</h3>
+          <p>Адрес музея 5</p>
+        </div>
+      </div>
+      <button class="arrow arrow-left" onclick="moveGallery(-1, 'museumsGallery')">&#10094;</button>
+      <button class="arrow arrow-right" onclick="moveGallery(1, 'museumsGallery')">&#10095;</button>
+    </div>
+
+    <!-- ========== ВЫСТАВКИ ========== -->
+    <h2 class="museums-title">Выставки</h2>
+    <div class="museums-gallery-wrapper">
+      <div class="museums-gallery" id="exhibitionsGallery">
+        <div class="museum-item">
+          <img src="../img/exhibition1.webp" alt="Выставка 1">
+          <h3>Выставка 1</h3>
+          <p>Адрес выставки 1</p>
+        </div>
+        <div class="museum-item">
+          <img src="../img/exhibition2.webp" alt="Выставка 2">
+          <h3>Выставка 2</h3>
+          <p>Адрес выставки 2</p>
+        </div>
+        <div class="museum-item">
+          <img src="../img/exhibition3.webp" alt="Выставка 3">
+          <h3>Выставка 3</h3>
+          <p>Адрес выставки 3</p>
+        </div>
+        <div class="museum-item">
+          <img src="../img/exhibition4.webp" alt="Выставка 4">
+          <h3>Выставка 4</h3>
+          <p>Адрес выставки 4</p>
+        </div>
+        <div class="museum-item">
+          <img src="../img/exhibition4.webp" alt="Выставка 5">
+          <h3>Выставка 5</h3>
+          <p>Адрес выставки 5</p>
+        </div>
+      </div>
+      <button class="arrow arrow-left" onclick="moveGallery(-1, 'exhibitionsGallery')">&#10094;</button>
+      <button class="arrow arrow-right" onclick="moveGallery(1, 'exhibitionsGallery')">&#10095;</button>
+    </div>
+
+    <!-- ========== ТЕАТРЫ ========== -->
+    <h2 class="museums-title">Театры</h2>
+    <div class="museums-gallery-wrapper">
+      <div class="museums-gallery" id="theatersGallery">
+        <div class="museum-item">
+          <img src="../img/theater1.webp" alt="Театр 1">
+          <h3>Театр 1</h3>
+          <p>Адрес театра 1</p>
+        </div>
+        <div class="museum-item">
+          <img src="../img/theater2.webp" alt="Театр 2">
+          <h3>Театр 2</h3>
+          <p>Адрес театра 2</p>
+        </div>
+        <div class="museum-item">
+          <img src="../img/theater3.webp" alt="Театр 3">
+          <h3>Театр 3</h3>
+          <p>Адрес театра 3</p>
+        </div>
+        <div class="museum-item">
+          <img src="../img/theater4.webp" alt="Театр 4">
+          <h3>Театр 4</h3>
+          <p>Адрес театра 4</p>
+        </div>
+        <div class="museum-item">
+          <img src="../img/theater5.webp" alt="Театр 5">
+          <h3>Театр 5</h3>
+          <p>Адрес театра 5</p>
+        </div>
+      </div>
+      <button class="arrow arrow-left" onclick="moveGallery(-1, 'theatersGallery')">&#10094;</button>
+      <button class="arrow arrow-right" onclick="moveGallery(1, 'theatersGallery')">&#10095;</button>
+    </div>
+
   </main>
 </body>
 </html>

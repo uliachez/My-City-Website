@@ -1,0 +1,123 @@
+/* Подключение шрифта Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
+
+/* Заголовок страницы */
+.culture-title {
+    width: 701px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 58px;
+    letter-spacing: 0.2px;
+    color: #121212;
+    margin-left: 120px;
+    margin-top: 40px;
+}
+
+/* Подзаголовок "Музеи" */
+.museums-title {
+    width: 140px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.2px;
+    color: #656B5F;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+/* === Галерея музеев === */
+.museums-gallery-wrapper {
+    position: relative;
+    width: calc(282px * 4 + 20px * 3); /* ширина под 4 фото */
+    height: 420px; /* высота блока с фотками + подписи */
+    margin-left: 120px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* Лента картинок */
+.museums-gallery {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+/* Блок одной фотографии с подписью */
+.museum-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+/* Изображение музея */
+.museum-item img {
+    width: 282px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.museum-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Название музея */
+.museum-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #121212;
+    margin: 8px 0 4px 0;
+}
+
+/* Адрес музея */
+.museum-item p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #414141;
+    margin: 0;
+}
+
+/* === Стрелки управления === */
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 44%; /* центрируем по вертикали относительно блока с фотками */
+    transform: translateY(-50%);
+    font-size: 48px;
+    color: #656B5F;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 10px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    z-index: 10;
+}
+
+.arrow-left {
+    left: -5px; /* слева у края блока */
+}
+
+.arrow-right {
+    right: -5px; /* справа у края блока */
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.arrow-left:disabled,
+.arrow-right:disabled {
+    color: #ccc;
+    cursor: default;
+    opacity: 0.5;
+}

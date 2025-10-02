@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FoodNN</title>
+  <script src="../js/script.js" defer></script>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/food.css">
 </head>
 <body>
   <header>
@@ -20,7 +22,39 @@
 
   <main>
     <h1>Где поесть</h1>
-    <p>Информация о ресторанах, кафе и местной кухне.</p>
+
+    <section class="accordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          Рестораны
+          <span class="arrow">▼</span>
+        </h2>
+        <div class="accordion-content">
+          <p>Содержимое аккордеона 1</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          Кафе и бистро
+          <span class="arrow">▼</span>
+        </h2>
+        <div class="accordion-content">
+          <p>Содержимое аккордеона 2</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          Кофейни и пекарни
+          <span class="arrow">▼</span>
+        </h2>
+        <div class="accordion-content">
+          <p>Содержимое аккордеона 3</p>
+        </div>
+      </div>
+    </section>
+    
   </main>
 </body>
 </html>

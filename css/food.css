@@ -1,0 +1,31 @@
+.accordion {
+    margin: 0;
+  }
+  
+  .accordion-header {
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+  }
+  
+  
+  /* класс для открытого состояния */
+  .accordion-item.active .arrow {
+    transform: rotate(180deg);
+  }
+  

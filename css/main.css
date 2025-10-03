@@ -34,14 +34,6 @@
     line-height: 1.4;
 }
 
-p {
-    font-size: 14px;
-    font-weight: 500;
-    color: #121212;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-}
-
 .blocks-container {
     display: flex;
     flex-wrap: wrap;
@@ -54,11 +46,6 @@ p {
     text-align: left;
 }
 
-h3 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #414141;
-}
 
 .rectangle {
     width: 100%;
@@ -73,22 +60,6 @@ h3 {
     font-weight: 500;
     line-height: 20px;
     color: #121212;
-}
-h4 {
-    font-size: 20px;
-    font-weight: 500;
-    color: #121212;
-    text-align: left;
-    margin-top: 48px;
-}
-
-h5 {
-    font-size: 16px;
-    font-weight: 700;
-    color: #656B5F;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-    margin: 0 0 10px 0;
 }
 
 .circle-group {

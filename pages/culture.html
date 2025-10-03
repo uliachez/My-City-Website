@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Культура и искусство</title>
+  <title>Культура и искусство Нижнего Новгорода</title>
+  
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/culture.css">
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="/pages/main.html">О городе</a></li>
+        <li><a href="/index.html">О городе</a></li>
         <li><a href="/pages/culture.html" class="active">Культура и искусство</a></li>
         <li><a href="/pages/food.html">Где поесть</a></li>
         <li><a href="/pages/parks.html">Парки и прогулки</a></li>
@@ -19,8 +21,111 @@
   </header>
 
   <main>
-    <h1>Культура и искусство</h1>
-    <p>Здесь можно рассказать о театрах, музеях и культурных событиях города.</p>
+    <h1 class="culture-title">Культура и искусство</h1>
+
+    <h2 class="museums-title">Музеи</h2>
+    <div class="gallery-wrapper">
+      <div class="gallery-track" id="museumsGallery">
+        <div class="gallery-item">
+          <img src="../assets/museum1.webp" alt="Музей 1">
+          <h3>Музей 1</h3>
+          <p>Адрес музея 1</p>
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/museum2.webp" alt="Музей 2">
+          <h3>Музей 2</h3>
+          <p>Адрес музея 2</p>
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/museum3.webp" alt="Музей 3">
+          <h3>Музей 3</h3>
+          <p>Адрес музея 3</p>
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/museum4.webp" alt="Музей 4">
+          <h3>Музей 4</h3>
+          <p>Адрес музея 4</p>
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/museum5.webp" alt="Музей 5">
+          <h3>Музей 5</h3>
+          <p>Адрес музея 5</p>
+        </div>
+      </div>
+      <button class="arrow arrow-left" onclick="moveGallery(-1, 'museumsGallery')">&#10094;</button>
+      <button class="arrow arrow-right" onclick="moveGallery(1, 'museumsGallery')">&#10095;</button>
+    </div>
+    <h2 class="exhibitions-title">Выставки</h2>
+    <div class="gallery-wrapper">
+      <div class="gallery-track" id="exhibitionsGallery">
+        <div class="gallery-item">
+          <img src="../assets/exhibition1.webp" alt="Выставка 1">
+          <h3>Выставка 1</h3>
+          <p>Адрес выставки 1</p>
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/exhibition2.webp" alt="Выставка 2">
+          <h3>Выставка 2</h3>
+          <p>Адрес выставки 2</p>
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/exhibition3.webp" alt="Выставка 3">
+          <h3>Выставка 3</h3>
+          <p>Адрес выставки 3</p>
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/exhibition4.webp" alt="Выставка 4">
+          <h3>Выставка 4</h3>
+          <p>Адрес выставки 4</p>
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/exhibition5.webp" alt="Выставка 5">
+          <h3>Выставка 5</h3>
+          <p>Адрес выставки 5</p>
+        </div>
+      </div>
+      <button class="arrow arrow-left" onclick="moveGallery(-1, 'exhibitionsGallery')">&#10094;</button>
+      <button class="arrow arrow-right" onclick="moveGallery(1, 'exhibitionsGallery')">&#10095;</button>
+    </div>
+    <h2 class="theaters-title">Театры</h2>
+    <div class="gallery-wrapper">
+      <div class="gallery-track" id="theatersGallery">
+        <div class="gallery-item">
+          <img src="../assets/theater1.webp" alt="Театр 1">
+          <h3>Театр 1</h3>
+          <p>Адрес театра 1</p>
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/theater2.webp" alt="Театр 2">
+          <h3>Театр 2</h3>
+          <p>Адрес театра 2</p>
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/theater3.webp" alt="Театр 3">
+          <h3>Театр 3</h3>
+          <p>Адрес театра 3</p>
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/theater4.webp" alt="Театр 4">
+          <h3>Театр 4</h3>
+          <p>Адрес театра 4</p>
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/theater5.webp" alt="Театр 5">
+          <h3>Театр 5</h3>
+          <p>Адрес театра 5</p>
+        </div>
+      </div>
+      <button class="arrow arrow-left" onclick="moveGallery(-1, 'theatersGallery')">&#10094;</button>
+      <button class="arrow arrow-right" onclick="moveGallery(1, 'theatersGallery')">&#10095;</button>
+    </div>
+
   </main>
+  <footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Мой Нижний Новгород. Все права защищены.</p>
+    </div>
+  </footer>
+  <script src="../js/gallery.js"></script>
 </body>
 </html>

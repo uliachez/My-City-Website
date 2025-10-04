@@ -1,9 +1,9 @@
-const accordionHeaders = document.querySelectorAll(".accordion-header");
+  const accordionHeaders = document.querySelectorAll(".accordion-header");
 
-accordionHeaders.forEach(header => {
-  header.addEventListener("click", () => {
-    const item = header.parentElement;
-    const content = header.nextElementSibling;
+  accordionHeaders.forEach(header => {
+    header.addEventListener("click", () => {
+      const item = header.parentElement;
+      const content = header.nextElementSibling;
 
     if (item.classList.contains("active")) {
       content.style.maxHeight = null;
@@ -15,4 +15,3 @@ accordionHeaders.forEach(header => {
     }
   });
 });
-

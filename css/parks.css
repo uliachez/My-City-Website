@@ -1,0 +1,71 @@
+h1 {
+    margin: 60px 0 0 0;
+}
+h2 {
+    margin-top: 48px;
+    text-align: left;
+}
+
+.parks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 48px;
+    justify-content: space-between;
+}
+
+.park-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    box-sizing: border-box;
+}
+
+.park-image {
+    width: 282px;
+    height: 282px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+.park-description {
+    width: 282px;
+    flex: 1;
+}
+
+
+.park-description h3 {
+    margin: 0 0 16px 0;
+    text-align: left;
+    font-size: 24px;
+}
+
+.park-description h5 {
+    margin: 0 0 10px 0;
+    text-align: left;
+    font-size: 16px;
+}
+
+.custom-list {
+    margin-left: 20px;
+    padding-left: 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+}
+
+.custom-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.custom-list li::before {
+    content: "•";
+    color: #414141;
+    font-size: 16px;
+    margin-right: 8px;
+    line-height: 1;
+}

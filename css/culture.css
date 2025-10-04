@@ -1,32 +1,10 @@
-/* Заголовки страницы */
-.culture-title {
-  width: 100%;
-  max-width: 701px;
-  font-size: 58px;
-  font-weight: 800;
-  letter-spacing: 0.2px;
-  color: #121212;
-  margin-top: 40px;
-  text-align: left;
-}
-
-h5 {
-  margin-top: 10px;
-}
-
 .museums-title,
 .exhibitions-title,
 .theaters-title {
-  font-size: 40px;
-  font-weight: 700;
-  color: #656B5F;
-  letter-spacing: 0.2px;
   margin-top: 30px;
   margin-bottom: 20px;
-  text-align: left;
 }
 
-/* Контейнер галереи */
 .gallery-wrapper {
   position: relative;
   width: 100%;
@@ -34,23 +12,20 @@ h5 {
   overflow: hidden;
 }
 
-/* Трек слайдера */
 .gallery-track {
   display: flex;
-  gap: 20px; /* фиксированный gap */
+  gap: 20px;
   transition: transform 0.5s ease;
   will-change: transform;
 }
 
-/* Карточки галереи */
 .gallery-item {
-  flex: 0 0 282px; /* фиксированная ширина */
+  flex: 0 0 282px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-/* Изображения карточек */
 .gallery-item img {
   width: 100%;
   height: auto;
@@ -65,7 +40,6 @@ h5 {
   transform: scale(1.05);
 }
 
-/* Заголовки и текст карточек */
 .gallery-item h3 {
   font-weight: 700;
   font-size: 24px;
@@ -84,7 +58,6 @@ h5 {
   margin: 0;
 }
 
-/* Стрелки слайдера */
 .arrow-left,
 .arrow-right {
   position: absolute;
@@ -117,46 +90,10 @@ h5 {
   opacity: 0.5;
 }
 
-/* Footer */
-.footer {
-  height: 130px;
-  background: #9C968A;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 150px;
-  padding-left: 120px;
-}
-
-.footer-content {
-  text-align: left;
-  font-size: 14px;
-}
-
-.footer-content p {
-  text-align: left;
-  font-size: 14px;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 300;
-}
-
-/* ======================================= */
-/* Адаптивность */
-
-/* Мобильные устройства (до 767px) */
 @media (max-width: 767px) {
-  .culture-title {
-    font-size: 36px;
-    max-width: 100%;
-    margin-top: 20px;
-    text-align: center;
-  }
-
   .museums-title,
   .exhibitions-title,
   .theaters-title {
-    font-size: 28px;
     margin-top: 20px;
     margin-bottom: 15px;
     text-align: center;
@@ -173,7 +110,7 @@ h5 {
   }
 
   .gallery-item {
-    flex: 0 0 70%; /* ширина карточки под мобильный экран */
+    flex: 0 0 70%;
   }
 
   .arrow-left,
@@ -181,27 +118,9 @@ h5 {
     font-size: 36px;
     top: 40%;
   }
-
-  .footer {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .footer-content {
-    font-size: 12px;
-  }
 }
 
-/* Планшеты (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .culture-title {
-    font-size: 48px;
-    max-width: 90%;
-    text-align: left;
-  }
-
   .museums-title,
   .exhibitions-title,
   .theaters-title {
@@ -217,30 +136,9 @@ h5 {
   .arrow-right {
     font-size: 40px;
   }
-
-  .footer {
-    padding-left: 60px;
-    height: 120px;
-  }
-
-  .footer-content {
-    font-size: 13px;
-  }
 }
 
-/* Десктопы (1024px и выше) */
 @media (min-width: 1024px) {
-  .culture-title {
-    font-size: 58px;
-    max-width: 701px;
-  }
-
-  .museums-title,
-  .exhibitions-title,
-  .theaters-title {
-    font-size: 40px;
-  }
-
   .gallery-item {
     flex: 0 0 282px;
   }
@@ -248,14 +146,5 @@ h5 {
   .arrow-left,
   .arrow-right {
     font-size: 44px;
-  }
-
-  .footer {
-    height: 130px;
-    padding-left: 120px;
-  }
-
-  .footer-content {
-    font-size: 14px;
   }
 }

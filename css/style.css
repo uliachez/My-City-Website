@@ -90,7 +90,8 @@ h5 {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.1px;
-  margin: 0 0 0 0;
+  margin: 0;
+  margin: 0;
 }
 
 p {
@@ -99,4 +100,34 @@ p {
   color: #121212;
   line-height: 20px;
   letter-spacing: 0.2px;
+  margin: 0;
+}
+
+.footer {
+  height: 130px;
+  background: #9C968A;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 150px;
+  padding-left: 120px;
+}
+
+.footer-content {
+  text-align: left;
+  font-size: 14px;
+}
+
+.footer-content p {
+  text-align: left;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 300;
+}
+
+@media (max-width: 900px) {
+  main {
+    padding: 0 60px;
+  }
 }

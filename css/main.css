@@ -104,29 +104,6 @@
     margin-bottom: 20px;
 }
 
-.footer {
-    height: 130px;
-    background: #9C968A;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 150px;
-    padding-left: 120px;
-}
-
-.footer-content {
-    text-align: left;
-    font-size: 14px;
-}
-
-.footer-content p {
-    text-align: left;
-    font-size: 14px;
-    color: #FFFFFF;
-    margin: 0;
-    font-weight: 300;
-}
-
 /* ========== ТОЛЬКО МОБИЛЬНАЯ ВЕРСИЯ (≤ 768px) ========== */
 @media (max-width: 768px) {
     .city-image-container {

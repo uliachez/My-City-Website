@@ -64,3 +64,11 @@
   h5{
     color: #121212;
   }
+
+  @media (max-width: 1115px) {
+    .place {
+      grid-template-columns: 35% 65%; 
+      gap: 24px;
+      padding-bottom: 40px;
+    }
+  }

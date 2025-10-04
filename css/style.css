@@ -133,6 +133,11 @@ p {
   main {
     padding: 0 60px;
   }
+  nav ul {
+    gap: 45px;
+    padding: 0 60px;
+    justify-content: center;
+  }
 }
 
 @media(max-width: 805px){
@@ -147,6 +152,10 @@ p {
 
 @media (max-width: 600px) {
   main {
+    padding: 0 30px;
+  }
+  nav ul {
+    gap: 35px;
     padding: 0 30px;
   }
 }

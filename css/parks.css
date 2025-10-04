@@ -19,6 +19,7 @@ h2 {
     align-items: flex-start;
     gap: 24px;
     box-sizing: border-box;
+    flex: 1 1 calc(50% - 40px);
 }
 
 .park-image {
@@ -31,17 +32,15 @@ h2 {
 }
 
 .park-description {
-    width: 282px;
     flex: 1;
+    min-width: 200px;
 }
-
 
 .park-description h3 {
     margin: 0 0 16px 0;
     text-align: left;
     font-size: 24px;
 }
-
 .park-description h5 {
     margin: 0 0 10px 0;
     text-align: left;
@@ -55,17 +54,50 @@ h2 {
     font-size: 14px;
     text-align: left;
 }
-
 .custom-list li {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
 }
-
 .custom-list li::before {
     content: "•";
     color: #414141;
     font-size: 16px;
     margin-right: 8px;
     line-height: 1;
+}
+
+@media (max-width: 1024px) {
+    .park-item {
+        flex: 1 1 100%;
+    }
+    .park-image {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .park-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .park-image {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+    .park-description {
+        width: 100%;
+        text-align: center;
+    }
+    .park-description h3, 
+    .park-description h5, 
+    .custom-list {
+        text-align: center;
+    }
+    .custom-list {
+        margin-left: 0;
+    }
 }

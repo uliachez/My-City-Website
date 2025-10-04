@@ -21,11 +21,11 @@
 .logo {
     width: 78px;
     height: auto;
-    flex-shrink: 0; /* Запрещаем сжатие лого */
+    flex-shrink: 0;
 }
 
 .text-content {
-    flex: 1; /* Текст занимает все оставшееся пространство */
+    flex: 1;
     text-align: left;
 }
 
@@ -104,7 +104,6 @@
     margin-bottom: 20px;
 }
 
-/* ========== ТОЛЬКО МОБИЛЬНАЯ ВЕРСИЯ (≤ 768px) ========== */
 @media (max-width: 768px) {
     .city-image-container {
         margin: 40px 0 0 0;
@@ -135,7 +134,7 @@
     }
 
     .custom-block {
-        width: 100%; /* На мобильных - одна колонка */
+        width: 100%;
     }
 
     .rectangle {
